@@ -172,6 +172,28 @@
                     <button class="cta-primary" id="heroDownloadBtn" data-i18n="hero.downloadBtn">立即下載 App</button>
                     <button class="cta-secondary" onclick="scrollToSection('experiences')" data-i18n="hero.browseBtn">瀏覽體驗</button>
                 </div>
+
+                <!-- Subscription Plans Promotion -->
+                <div class="subscription-promotion">
+                    <div class="subscription-banner">
+                        <div class="subscription-content">
+                            <div class="subscription-badge" data-i18n="subscription.badge">🎯 限時優惠</div>
+                            <h3 data-i18n="subscription.title">加入嘟男會員制</h3>
+                            <p data-i18n="subscription.subtitle">享受專屬折扣、VIP服務與獨家行程</p>
+                            <div class="subscription-price">
+                                <span class="price-from" data-i18n="subscription.priceFrom">月費低至</span>
+                                <span class="price">€9.99</span>
+                                <span class="price-desc" data-i18n="subscription.priceStart">起</span>
+                            </div>
+                        </div>
+                        <button class="subscription-btn" id="subscriptionBtn">
+                            <span data-i18n="subscription.viewPlans">查看訂閱方案</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="hero-image">
                 <div class="destination-carousel">
@@ -400,6 +422,128 @@
             <div class="modal-buttons">
                 <button class="modal-btn android" id="modalAndroidBtn" data-i18n="modal.android">下載 Android App</button>
                 <button class="modal-btn web" id="modalWebBtn" data-i18n="modal.web">繼續使用網頁版</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscription Plans Modal -->
+    <div class="modal" id="subscriptionModal">
+        <div class="modal-content subscription-modal-content">
+            <span class="modal-close" id="subscriptionModalClose">&times;</span>
+            <div class="subscription-modal-header">
+                <h2 data-i18n="subscription.modal.title">嘟男旅遊訂閱制會員方案</h2>
+                <p data-i18n="subscription.modal.subtitle">提升用戶黏性、增加經常性收入，並提供差異化的旅遊體驗</p>
+            </div>
+
+            <div class="subscription-plans">
+                <!-- Level 1: 嘟男會員 -->
+                <div class="subscription-plan basic">
+                    <div class="plan-header">
+                        <h3 data-i18n="subscription.basic.name">嘟男會員</h3>
+                        <div class="plan-subtitle" data-i18n="subscription.basic.subtitle">DodoMan Member</div>
+                        <div class="plan-price">
+                            <span class="price-monthly">€9.99 <small>/月</small></span>
+                            <span class="price-yearly">€99.90 <small>/年</small></span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-i18n="subscription.basic.features.title">核心權益</h4>
+                        <ul>
+                            <li data-i18n="subscription.basic.feature1">🎯 所有旅遊套餐享5%折扣</li>
+                            <li data-i18n="subscription.basic.feature2">📱 優先獲得新行程通知</li>
+                            <li data-i18n="subscription.basic.feature3">🎧 專屬客服熱線</li>
+                            <li data-i18n="subscription.basic.feature4">📚 每月旅遊攻略電子書</li>
+                            <li data-i18n="subscription.basic.feature5">🗺️ 免費行程規劃工具使用</li>
+                        </ul>
+                        <div class="plan-target">
+                            <strong>適合族群：</strong><span data-i18n="subscription.basic.target">預算導向的年輕旅客、初次歐洲旅行者、價格敏感但追求品質的用戶</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn">選擇方案</button>
+                </div>
+
+                <!-- Level 2: 岩男會員 -->
+                <div class="subscription-plan premium">
+                    <div class="plan-badge" data-i18n="subscription.premium.badge">推薦</div>
+                    <div class="plan-header">
+                        <h3 data-i18n="subscription.premium.name">岩男會員</h3>
+                        <div class="plan-subtitle" data-i18n="subscription.premium.subtitle">Rock Man Member</div>
+                        <div class="plan-price">
+                            <span class="price-monthly">€19.99 <small>/月</small></span>
+                            <span class="price-yearly">€199.90 <small>/年</small></span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-i18n="subscription.premium.features.title">核心權益</h4>
+                        <ul>
+                            <li data-i18n="subscription.premium.feature1">🎯 所有旅遊套餐享10%折扣</li>
+                            <li data-i18n="subscription.premium.feature2">✈️ 每年2次免費機場接送服務</li>
+                            <li data-i18n="subscription.premium.feature3">🏨 酒店免費升等機會</li>
+                            <li data-i18n="subscription.premium.feature4">📞 24/7 緊急旅遊支援</li>
+                            <li data-i18n="subscription.premium.feature5">🎁 每季專屬限定行程優先預訂</li>
+                            <li data-i18n="subscription.premium.feature6">💳 旅遊保險折扣優惠</li>
+                            <li data-i18n="subscription.premium.feature7">🍽️ 合作餐廳用餐折扣</li>
+                            <li data-i18n="subscription.premium.feature8">📲 APP進階功能解鎖</li>
+                        </ul>
+                        <div class="plan-target">
+                            <strong>適合族群：</strong><span data-i18n="subscription.premium.target">經常旅行的商務人士、追求便利性的中產階級、重視服務品質的旅客</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn">選擇方案</button>
+                </div>
+
+                <!-- Level 3: 霸道總裁會員 -->
+                <div class="subscription-plan vip">
+                    <div class="plan-header">
+                        <h3 data-i18n="subscription.vip.name">霸道總裁會員</h3>
+                        <div class="plan-subtitle" data-i18n="subscription.vip.subtitle">Executive VIP</div>
+                        <div class="plan-price">
+                            <span class="price-monthly">€39.99 <small>/月</small></span>
+                            <span class="price-yearly">€399.90 <small>/年</small></span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-i18n="subscription.vip.features.title">核心權益</h4>
+                        <ul>
+                            <li data-i18n="subscription.vip.feature1">🎯 所有旅遊套餐享15%折扣</li>
+                            <li data-i18n="subscription.vip.feature2">🚗 無限次免費機場接送</li>
+                            <li data-i18n="subscription.vip.feature3">🏨 酒店自動升等至最高可用房型</li>
+                            <li data-i18n="subscription.vip.feature4">👨‍💼 專屬旅遊顧問服務</li>
+                            <li data-i18n="subscription.vip.feature5">🎪 VIP專屬行程與私人導遊</li>
+                            <li data-i18n="subscription.vip.feature6">✈️ 商務艙升等優先權</li>
+                            <li data-i18n="subscription.vip.feature7">🍾 機場貴賓室免費使用</li>
+                            <li data-i18n="subscription.vip.feature8">🎁 每月專屬禮品</li>
+                            <li data-i18n="subscription.vip.feature9">📱 優先體驗新功能與服務</li>
+                            <li data-i18n="subscription.vip.feature10">🌍 全球緊急救援服務</li>
+                            <li data-i18n="subscription.vip.feature11">💎 合作夥伴奢華體驗折扣</li>
+                        </ul>
+                        <div class="plan-target">
+                            <strong>適合族群：</strong><span data-i18n="subscription.vip.target">高收入專業人士、企業高階主管、追求奢華體驗的旅客</span>
+                        </div>
+                    </div>
+                    <button class="plan-btn">選擇方案</button>
+                </div>
+            </div>
+
+            <div class="subscription-modal-footer">
+                <div class="revenue-forecast">
+                    <h4 data-i18n="subscription.footer.title">年度預期效益</h4>
+                    <div class="forecast-stats">
+                        <div class="stat">
+                            <span class="stat-number">€1,115,000</span>
+                            <span class="stat-desc" data-i18n="subscription.footer.revenue">年度訂閱收益總計</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+30%</span>
+                            <span class="stat-desc" data-i18n="subscription.footer.growth">旅遊套餐銷售增長</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+40%</span>
+                            <span class="stat-desc" data-i18n="subscription.footer.value">客戶生命週期價值提升</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="modal-disclaimer" data-i18n="subscription.footer.disclaimer">*訂閱方案即將推出，敬請期待</p>
             </div>
         </div>
     </div>

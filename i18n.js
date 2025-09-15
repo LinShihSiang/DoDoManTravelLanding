@@ -186,6 +186,68 @@ class I18nManager {
                 'modal.android': '下載 Android App',
                 'modal.web': '繼續使用網頁版',
 
+                // Subscription Section
+                'subscription.badge': '🎯 限時優惠',
+                'subscription.title': '加入嘟男會員制',
+                'subscription.subtitle': '享受專屬折扣、VIP服務與獨家行程',
+                'subscription.priceFrom': '月費低至',
+                'subscription.priceStart': '起',
+                'subscription.viewPlans': '查看訂閱方案',
+
+                // Subscription Modal
+                'subscription.modal.title': '嘟男旅遊訂閱制會員方案',
+                'subscription.modal.subtitle': '提升用戶黏性、增加經常性收入，並提供差異化的旅遊體驗',
+
+                // Plan 1: Basic
+                'subscription.basic.name': '嘟男會員',
+                'subscription.basic.subtitle': 'DodoMan Member',
+                'subscription.basic.features.title': '核心權益',
+                'subscription.basic.feature1': '🎯 所有旅遊套餐享5%折扣',
+                'subscription.basic.feature2': '📱 優先獲得新行程通知',
+                'subscription.basic.feature3': '🎧 專屬客服熱線',
+                'subscription.basic.feature4': '📚 每月旅遊攻略電子書',
+                'subscription.basic.feature5': '🗺️ 免費行程規劃工具使用',
+                'subscription.basic.target': '適合族群：預算導向的年輕旅客、初次歐洲旅行者、價格敏感但追求品質的用戶',
+
+                // Plan 2: Premium
+                'subscription.premium.name': '岩男會員',
+                'subscription.premium.subtitle': 'Rock Man Member',
+                'subscription.premium.badge': '推薦',
+                'subscription.premium.features.title': '核心權益',
+                'subscription.premium.feature1': '🎯 所有旅遊套餐享10%折扣',
+                'subscription.premium.feature2': '✈️ 每年2次免費機場接送服務',
+                'subscription.premium.feature3': '🏨 酒店免費升等機會',
+                'subscription.premium.feature4': '📞 24/7 緊急旅遊支援',
+                'subscription.premium.feature5': '🎁 每季專屬限定行程優先預訂',
+                'subscription.premium.feature6': '💳 旅遊保險折扣優惠',
+                'subscription.premium.feature7': '🍽️ 合作餐廳用餐折扣',
+                'subscription.premium.feature8': '📲 APP進階功能解鎖',
+                'subscription.premium.target': '適合族群：經常旅行的商務人士、追求便利性的中產階級、重視服務品質的旅客',
+
+                // Plan 3: VIP
+                'subscription.vip.name': '霸道總裁會員',
+                'subscription.vip.subtitle': 'Executive VIP',
+                'subscription.vip.features.title': '核心權益',
+                'subscription.vip.feature1': '🎯 所有旅遊套餐享15%折扣',
+                'subscription.vip.feature2': '🚗 無限次免費機場接送',
+                'subscription.vip.feature3': '🏨 酒店自動升等至最高可用房型',
+                'subscription.vip.feature4': '👨‍💼 專屬旅遊顧問服務',
+                'subscription.vip.feature5': '🎪 VIP專屬行程與私人導遊',
+                'subscription.vip.feature6': '✈️ 商務艙升等優先權',
+                'subscription.vip.feature7': '🍾 機場貴賓室免費使用',
+                'subscription.vip.feature8': '🎁 每月專屬禮品',
+                'subscription.vip.feature9': '📱 優先體驗新功能與服務',
+                'subscription.vip.feature10': '🌍 全球緊急救援服務',
+                'subscription.vip.feature11': '💎 合作夥伴奢華體驗折扣',
+                'subscription.vip.target': '適合族群：高收入專業人士、企業高階主管、追求奢華體驗的旅客',
+
+                // Footer
+                'subscription.footer.title': '年度預期效益',
+                'subscription.footer.revenue': '年度訂閱收益總計',
+                'subscription.footer.growth': '旅遊套餐銷售增長',
+                'subscription.footer.value': '客戶生命週期價值提升',
+                'subscription.footer.disclaimer': '*訂閱方案即將推出，敬請期待',
+
                 // Language Selector
                 'lang.selector': '語言',
                 'lang.zh-TW': '繁體中文',
@@ -374,6 +436,68 @@ class I18nManager {
                 'modal.desc': 'For the best experience, please download our official App',
                 'modal.android': 'Download Android App',
                 'modal.web': 'Continue with Web',
+
+                // Subscription Section
+                'subscription.badge': '🎯 Limited Offer',
+                'subscription.title': 'Join DodoMan Membership',
+                'subscription.subtitle': 'Enjoy exclusive discounts, VIP services & unique experiences',
+                'subscription.priceFrom': 'Monthly from',
+                'subscription.priceStart': 'onwards',
+                'subscription.viewPlans': 'View Plans',
+
+                // Subscription Modal
+                'subscription.modal.title': 'DodoMan Travel Subscription Membership Plans',
+                'subscription.modal.subtitle': 'Enhance user loyalty, increase recurring revenue, and provide differentiated travel experiences',
+
+                // Plan 1: Basic
+                'subscription.basic.name': 'DodoMan Member',
+                'subscription.basic.subtitle': 'DodoMan Member',
+                'subscription.basic.features.title': 'Core Benefits',
+                'subscription.basic.feature1': '🎯 5% discount on all travel packages',
+                'subscription.basic.feature2': '📱 Priority new itinerary notifications',
+                'subscription.basic.feature3': '🎧 Dedicated customer service hotline',
+                'subscription.basic.feature4': '📚 Monthly travel guide e-books',
+                'subscription.basic.feature5': '🗺️ Free travel planning tool access',
+                'subscription.basic.target': 'Target Group: Budget-conscious young travelers, first-time Europe visitors, price-sensitive quality seekers',
+
+                // Plan 2: Premium
+                'subscription.premium.name': 'Rock Man Member',
+                'subscription.premium.subtitle': 'Rock Man Member',
+                'subscription.premium.badge': 'Recommended',
+                'subscription.premium.features.title': 'Core Benefits',
+                'subscription.premium.feature1': '🎯 10% discount on all travel packages',
+                'subscription.premium.feature2': '✈️ 2 free airport transfer services per year',
+                'subscription.premium.feature3': '🏨 Free hotel upgrade opportunities',
+                'subscription.premium.feature4': '📞 24/7 emergency travel support',
+                'subscription.premium.feature5': '🎁 Quarterly exclusive itinerary priority booking',
+                'subscription.premium.feature6': '💳 Travel insurance discount benefits',
+                'subscription.premium.feature7': '🍽️ Partner restaurant dining discounts',
+                'subscription.premium.feature8': '📲 APP advanced features unlock',
+                'subscription.premium.target': 'Target Group: Frequent business travelers, convenience-seeking middle class, service quality-focused travelers',
+
+                // Plan 3: VIP
+                'subscription.vip.name': 'Executive VIP',
+                'subscription.vip.subtitle': 'Executive VIP',
+                'subscription.vip.features.title': 'Core Benefits',
+                'subscription.vip.feature1': '🎯 15% discount on all travel packages',
+                'subscription.vip.feature2': '🚗 Unlimited free airport transfers',
+                'subscription.vip.feature3': '🏨 Automatic hotel upgrade to highest available room',
+                'subscription.vip.feature4': '👨‍💼 Dedicated travel consultant service',
+                'subscription.vip.feature5': '🎪 VIP exclusive tours with private guides',
+                'subscription.vip.feature6': '✈️ Business class upgrade priority',
+                'subscription.vip.feature7': '🍾 Free airport lounge access',
+                'subscription.vip.feature8': '🎁 Monthly exclusive gifts',
+                'subscription.vip.feature9': '📱 Priority access to new features & services',
+                'subscription.vip.feature10': '🌍 Global emergency rescue services',
+                'subscription.vip.feature11': '💎 Partner luxury experience discounts',
+                'subscription.vip.target': 'Target Group: High-income professionals, corporate executives, luxury experience seekers',
+
+                // Footer
+                'subscription.footer.title': 'Annual Projected Benefits',
+                'subscription.footer.revenue': 'Annual subscription revenue total',
+                'subscription.footer.growth': 'Travel package sales growth',
+                'subscription.footer.value': 'Customer lifetime value increase',
+                'subscription.footer.disclaimer': '*Subscription plans coming soon, stay tuned',
 
                 // Language Selector
                 'lang.selector': 'Language',

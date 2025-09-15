@@ -1176,3 +1176,114 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Subscription Modal Manager
+class SubscriptionModalManager {
+    constructor() {
+        this.modal = document.getElementById('subscriptionModal');
+        this.openBtn = document.getElementById('subscriptionBtn');
+        this.closeBtn = document.getElementById('subscriptionModalClose');
+        this.init();
+    }
+
+    init() {
+        this.setupEventListeners();
+    }
+
+    setupEventListeners() {
+        // Open modal
+        if (this.openBtn) {
+            this.openBtn.addEventListener('click', () => {
+                this.openModal();
+            });
+        }
+
+        // Close modal
+        if (this.closeBtn) {
+            this.closeBtn.addEventListener('click', () => {
+                this.closeModal();
+            });
+        }
+
+        // Close modal when clicking outside
+        if (this.modal) {
+            this.modal.addEventListener('click', (e) => {
+                if (e.target === this.modal) {
+                    this.closeModal();
+                }
+            });
+        }
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.modal && this.modal.style.display === 'flex') {
+                this.closeModal();
+            }
+        });
+
+        // Setup plan selection buttons
+        this.setupPlanButtons();
+    }
+
+    setupPlanButtons() {
+        document.querySelectorAll('.plan-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const planElement = e.target.closest('.subscription-plan');
+                const planType = planElement.classList.contains('basic') ? '嘟男會員' :
+                                planElement.classList.contains('premium') ? '岩男會員' : '霸道總裁會員';
+
+                // Add loading state
+                const originalText = btn.textContent;
+                btn.textContent = '處理中...';
+                btn.disabled = true;
+
+                // Simulate processing
+                setTimeout(() => {
+                    alert(`感謝您選擇 ${planType}！此功能即將推出，我們將盡快通知您。`);
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }, 1000);
+            });
+        });
+    }
+
+    openModal() {
+        if (this.modal) {
+            this.modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+            // Add entrance animation
+            const modalContent = this.modal.querySelector('.modal-content');
+            if (modalContent) {
+                modalContent.style.animation = 'slideInFromBottom 0.3s ease-out';
+            }
+
+            // Track analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'subscription_modal_open', {
+                    event_category: 'engagement',
+                    event_label: 'subscription_plans'
+                });
+            }
+        }
+    }
+
+    closeModal() {
+        if (this.modal) {
+            const modalContent = this.modal.querySelector('.modal-content');
+            if (modalContent) {
+                modalContent.style.animation = 'slideOutToBottom 0.3s ease-in';
+            }
+
+            setTimeout(() => {
+                this.modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+    }
+}
+
+// Initialize subscription modal when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new SubscriptionModalManager();
+});
