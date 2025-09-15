@@ -25,7 +25,7 @@ const PACKAGE_DATA = [
         key: "rome",
         price: "€232",
         originalPrice: "€280",
-        image: "https://sematicweb.detie.cn/content/W__37747155.jpg",
+        image: "images/rome.jpg",
         featureCount: 4,
         discount: "17%"
     },
@@ -34,7 +34,7 @@ const PACKAGE_DATA = [
         key: "milan",
         price: "€155",
         originalPrice: "€185",
-        image: "https://sematicweb.detie.cn/content/W__27626748.jpg",
+        image: "images/milan.jpg",
         featureCount: 5,
         discount: "16%"
     },
@@ -43,7 +43,7 @@ const PACKAGE_DATA = [
         key: "munich",
         price: "€298",
         originalPrice: "€350",
-        image: "https://sematicweb.detie.cn/content/N__296314458.jpg",
+        image: "images/munich.jpg",
         featureCount: 5,
         discount: "15%"
     },
@@ -52,7 +52,7 @@ const PACKAGE_DATA = [
         key: "vatican",
         price: "€115",
         originalPrice: "€140",
-        image: "https://sematicweb.detie.cn/content/W__51395665.jpg",
+        image: "images/vatican.jpg",
         featureCount: 6,
         discount: "18%"
     }

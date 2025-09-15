@@ -1,7 +1,7 @@
 // 多語系管理系統
 class I18nManager {
     constructor() {
-        this.currentLanguage = localStorage.getItem('dodoman-language') || 'zh-TW';
+        this.currentLanguage = localStorage.getItem('dodoman-language') || 'en';
         this.translations = {
             'zh-TW': {
                 // Header 導航
