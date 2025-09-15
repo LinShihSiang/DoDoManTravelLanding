@@ -102,7 +102,7 @@ class AppManager {
         this.isMobile = this.isIOS || this.isAndroid;
 
         // App Store URL
-        this.appURL = 'https://dodomantravel.online/DoDoManTravel.apk';
+        this.appURL = 'https://drive.google.com/file/d/1lbDW1BNVDY599gBXOD5RQwjrde2a-91t/view?usp=sharing';
 
         // App URL schemes for opening installed apps
         this.appScheme = 'dodoman://';
