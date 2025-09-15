@@ -18,43 +18,79 @@ const DESTINATION_DATA = [
     }
 ];
 
-// Package Tour Data - Selected from Italy_Germany_tours.json
+// Package Tour Data - Selected from Italy_Germany_tours.json (First 6 Tours)
 const PACKAGE_DATA = [
     {
         id: "TR__6274P15",
-        key: "rome",
+        key: "rome_venice_train",
+        name: "Rome Independent Tour from Venice by High-Speed Train",
+        intro: "A new Sightseeing tour with daily departure from Venice by round trip high speed train. Includes ticket to hop-op hop-off bus and a tour of the Vatican and Sistine Chapel with an expert guide. Art, Culture and Leisure in Rome suitable for all!",
         price: "€232",
         originalPrice: "€280",
-        image: "images/rome.jpg",
+        image: "images/rome_venice_train.jpg",
+        location: "Venice",
         featureCount: 4,
         discount: "17%"
     },
     {
         id: "TR__3731P161",
-        key: "milan",
+        key: "milan_turin_supersaver",
+        name: "Milan Super Saver: Turin and Milan One-Day Highlights Tour",
+        intro: "Visit two of northern Italy's top cities in a single day with this Milan Super Saver, which combines two tours at one price. From Milan, travel to Turin by high-speed train, and see sights such as Piazza San Carlo with its 17th-century churches. You'll also enjoy a chocolate and gelato tasting. Back in Milan, take an evening walking tour around Piazza del Duomo, and sip a glass of prosecco.",
         price: "€155",
         originalPrice: "€185",
-        image: "images/milan.jpg",
+        image: "images/milan_turin_supersaver.jpg",
+        location: "Turin",
         featureCount: 5,
         discount: "16%"
     },
     {
-        id: "TR__5326MUCNUREM",
-        key: "munich",
-        price: "€298",
-        originalPrice: "€350",
-        image: "images/munich.jpg",
-        featureCount: 5,
-        discount: "15%"
+        id: "TR__6005P2",
+        key: "berlin_ddr_museum",
+        name: "Skip the line: DDR Museum Berlin",
+        intro: "Experience life in socialist East Germany with a trip to Berlin's award-winning DDR Museum to understand life under the dictatorship of the former DDR government between 1949 and 1989. Avoid the long queues with your skip the line entrance ticket which admits you to all areas of the museum.",
+        price: "€12",
+        originalPrice: "€15",
+        image: "images/berlin_ddr_museum.jpg",
+        location: "Berlin",
+        featureCount: 3,
+        discount: "20%"
     },
     {
-        id: "TR__5831P13",
-        key: "vatican",
-        price: "€115",
-        originalPrice: "€140",
-        image: "images/vatican.jpg",
-        featureCount: 6,
-        discount: "18%"
+        id: "TR__8515P29",
+        key: "rome_colosseum_walking",
+        name: "Private Tour: The Glory of Ancient Rome and Colosseum Walking Tour",
+        intro: "Begin this 3 hour sightseeing tour of Imperial Rome at the world's most famous arena; the Colosseum, once able to seat up to 50,000 spectators. The building of the Colosseum began in 72 A.D. and was finished 8 years later. The stadium's gladiatorial contests were its main attraction.",
+        price: "€69",
+        originalPrice: "€85",
+        image: "images/rome_venice_train.jpg",
+        location: "Rome",
+        featureCount: 4,
+        discount: "19%"
+    },
+    {
+        id: "TR__40738P3",
+        key: "berlin_alternative_tour",
+        name: "Private 3.5-Hour Berlin Walking Tour: The Alternative Berlin Tour",
+        intro: "Enjoy a 3.5-hour walking tour in Berlin and see the alternative Hippie Berlin with its graffiti, squats, art projects and special alternative stories. See Kreuzberg center, Fridrichshain and Warschauer street station, East Side Gallery, Yaam beach, Potsdamer Platz.",
+        price: "€150",
+        originalPrice: "€180",
+        image: "images/berlin_alternative_tour.jpg",
+        location: "Berlin",
+        featureCount: 5,
+        discount: "17%"
+    },
+    {
+        id: "TR__33060P7",
+        key: "milan_duomo_rooftop",
+        name: "Milan Duomo Rooftop Tour Including Free Virtual Reality Jump into the Past",
+        intro: "Enjoy an amazing view of Milan from above visiting the terraces of the Duomo with professional local guides. During this 1-hour tour you'll get spectacular views over the city of Milan while walking on the rooftop of this majestic monument. You will also experience a unique immersive 3-D virtual reality experience.",
+        price: "€39",
+        originalPrice: "€50",
+        image: "images/milan_duomo_rooftop.jpg",
+        location: "Milan",
+        featureCount: 4,
+        discount: "22%"
     }
 ];
 
